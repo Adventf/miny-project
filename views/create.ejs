@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <title>Favorit</title>
+  </head>
+
+  <body>
+    <h3 class="mt-5 text-center">Create New Movie</h3>
+    <div class="container mt-3 d-flex justify-content-center">
+      <div class="card" style="width: 20rem">
+        <div class="card-body">
+          <form action="/create" method="POST">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="text" name="name" class="form-control" placeholder="Title" />
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" name="imageurl" class="form-control" placeholder="Imageurl" />
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" name="info" class="form-control" placeholder="Informasi" />
+              </div>
+            </div>
+            <hr />
+            <div>
+              <a href="/" class="btn">Back</a>
+              <button type="submit">Create</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
